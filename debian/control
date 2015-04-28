@@ -1,0 +1,26 @@
+Source: libthumbor
+Maintainer: Marcelo Jorge Vieira <metal@debian.org>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3),
+ python-all (>= 2.6.6-3),
+ debhelper (>= 8),
+ dh-python,
+ python-crypto,
+ python-mock,
+ python-nose,
+ python-nose-yanc,
+ python-coverage,
+ python-preggy,
+ python-ipdb
+Standards-Version: 3.9.6
+Homepage: https://github.com/thumbor/libthumbor
+Vcs-Browser: http://anonscm.debian.org/cgit/users/metal/libthumbor.git
+Vcs-Git: git://anonscm.debian.org/users/metal/libthumbor.git
+X-Python-Version: >= 2.6
+
+Package: python-libthumbor
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python's extensions to thumbor
+ These are used to generate safe urls among others.
